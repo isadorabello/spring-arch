@@ -12,8 +12,9 @@ public class ArquiteturaspringApplication {
 
 	public static void main(String[] args) {
 
-//		SpringApplication.run(ArquiteturaspringApplication.class, args);
+		SpringApplication.run(ArquiteturaspringApplication.class, args);
 
+		/*
 		SpringApplicationBuilder builder = new SpringApplicationBuilder(ArquiteturaspringApplication.class);
 		builder.bannerMode(Banner.Mode.OFF);
 		builder.profiles("Production", "Homologation");
@@ -26,6 +27,7 @@ public class ArquiteturaspringApplication {
 		ConfigurableEnvironment environment = applicationContext.getEnvironment();
 		String appName = environment.getProperty("spring.application.name");
 		System.out.println("Nome da aplicação: " + appName);
+		 */
 
 	}
 
