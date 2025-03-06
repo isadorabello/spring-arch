@@ -5,6 +5,15 @@ public class Equipamento {
     private TipoEquipamento tipo;
     private Placa placa;
 
+    @Override
+    public String toString() {
+        return "Equipamento{" +
+                "fornecedor=" + fornecedor +
+                ", tipo=" + tipo +
+                ", placa=" + placa +
+                '}';
+    }
+
     public Equipamento(Placa placa) {
         this.placa = placa;
     }

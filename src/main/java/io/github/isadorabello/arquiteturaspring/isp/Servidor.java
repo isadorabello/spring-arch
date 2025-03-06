@@ -1,5 +1,7 @@
 package io.github.isadorabello.arquiteturaspring.isp;
 
+import io.github.isadorabello.arquiteturaspring.api.ServidorStatus;
+
 public class Servidor {
 
     private String modelo;
@@ -32,5 +34,12 @@ public class Servidor {
 
     public void setFornecedor(Fornecedor fornecedor) {
         this.fornecedor = fornecedor;
+    }
+
+    public ServidorStatus configuracao(Comando comandos) {
+        if(comandos.getTipo() != this.equipamento.getTipo()){
+            return new ServidorStatus("Comandos incompatíveis. Não foi possível configurar o equipamento");
+        }
+        return new ServidorStatus("Comandos compatíveis. Iniciando configuração no servidor com " + equipamento);
     }
 }

@@ -1,18 +1,29 @@
 package io.github.isadorabello.arquiteturaspring.isp;
 
 public class Placa {
-    private String nomrModelo;
+    private String nomeModelo;
     private Integer numeroPortas;
     private Integer capacidade;
     private TipoPlaca tipo;
 
-    public String getNomrModelo() {
-        return nomrModelo;
+    @Override
+    public String toString() {
+        return "Placa{" +
+                "Nome do Modelo='" + nomeModelo + '\'' +
+                ", N° de Portas=" + numeroPortas +
+                ", Capacidade=" + capacidade +
+                ", Tipo=" + tipo +
+                '}';
     }
 
-    public void setNomrModelo(String nomrModelo) {
-        this.nomrModelo = nomrModelo;
+    public String getNomeModelo() {
+        return nomeModelo;
     }
+
+    public void setNomeModelo(String nomeModelo) {
+        this.nomeModelo = nomeModelo;
+    }
+
 
     public Integer getNumeroPortas() {
         return numeroPortas;
