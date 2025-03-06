@@ -14,8 +14,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/servidores")
 public class TesteController {
 
+    // @Qualifier("equipamentoSwitch")  // define qual dos beans será escolhido para a injeção
     @Autowired
-    @Qualifier("equipamentoSwitch")  // define qual dos beans será escolhido para a injeção
+    @Switch
     private Equipamento equipamento; // injeção de dependência
 
     @PostMapping

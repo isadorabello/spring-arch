@@ -3,6 +3,7 @@ package io.github.isadorabello.arquiteturaspring.configuration;
 import io.github.isadorabello.arquiteturaspring.isp.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 @Configuration
 public class FornecedorConfiguration {
@@ -22,6 +23,7 @@ public class FornecedorConfiguration {
     }
 
     @Bean(name = "equipamentoSwitch")
+    @Primary
     public Equipamento equipamentoSwitch (){
         var placa = new Placa();
         placa.setNomeModelo("LPU-SN547821163");
