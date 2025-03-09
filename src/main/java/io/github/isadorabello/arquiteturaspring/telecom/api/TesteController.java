@@ -1,10 +1,9 @@
-package io.github.isadorabello.arquiteturaspring.api;
+package io.github.isadorabello.arquiteturaspring.telecom.api;
 
-import io.github.isadorabello.arquiteturaspring.isp.Comando;
-import io.github.isadorabello.arquiteturaspring.isp.Equipamento;
-import io.github.isadorabello.arquiteturaspring.isp.Taishan;
+import io.github.isadorabello.arquiteturaspring.telecom.isp.Comando;
+import io.github.isadorabello.arquiteturaspring.telecom.isp.Equipamento;
+import io.github.isadorabello.arquiteturaspring.telecom.isp.Taishan;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

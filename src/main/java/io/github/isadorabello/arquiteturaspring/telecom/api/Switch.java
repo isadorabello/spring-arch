@@ -1,4 +1,4 @@
-package io.github.isadorabello.arquiteturaspring.api;
+package io.github.isadorabello.arquiteturaspring.telecom.api;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 

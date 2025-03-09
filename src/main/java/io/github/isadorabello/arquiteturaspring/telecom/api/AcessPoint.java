@@ -1,4 +1,4 @@
-package io.github.isadorabello.arquiteturaspring.api;
+package io.github.isadorabello.arquiteturaspring.telecom.api;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 
@@ -9,7 +9,6 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.FIELD, ElementType.METHOD})
-@Qualifier("equipamentoRouter")
-public @interface Roteador {
-
+@Qualifier("equipamentoAC")
+public @interface AcessPoint {
 }

@@ -1,6 +1,6 @@
-package io.github.isadorabello.arquiteturaspring.configuration;
+package io.github.isadorabello.arquiteturaspring.telecom.configuration;
 
-import io.github.isadorabello.arquiteturaspring.isp.*;
+import io.github.isadorabello.arquiteturaspring.telecom.isp.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;

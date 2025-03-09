@@ -1,6 +1,6 @@
-package io.github.isadorabello.arquiteturaspring.isp;
+package io.github.isadorabello.arquiteturaspring.telecom.isp;
 
-import io.github.isadorabello.arquiteturaspring.api.ServidorStatus;
+import io.github.isadorabello.arquiteturaspring.telecom.api.ServidorStatus;
 
 public class Servidor {
 

@@ -1,4 +1,4 @@
-package io.github.isadorabello.arquiteturaspring.isp;
+package io.github.isadorabello.arquiteturaspring.telecom.isp;
 
 public class Equipamento {
     private Fornecedor fornecedor;
