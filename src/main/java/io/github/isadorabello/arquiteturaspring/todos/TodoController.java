@@ -1,7 +1,9 @@
 package io.github.isadorabello.arquiteturaspring.todos;
 
 
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.ResponseStatusException;
 
 // interface -> controller -> service (dependẽncias) -> repository -> banco de dados
 
@@ -17,7 +19,12 @@ public class TodoController {
 
     @PostMapping
     public TodoEntity salvar(@RequestBody TodoEntity novo){
-        return this.service.salvar(novo);
+        try {
+            return this.service.salvar(novo);
+        }catch (IllegalArgumentException e){
+            var mensagemErro = e.getMessage();
+            throw new ResponseStatusException(HttpStatus.CONFLICT, mensagemErro);
+        }
     }
 
     @PutMapping("{id}")
