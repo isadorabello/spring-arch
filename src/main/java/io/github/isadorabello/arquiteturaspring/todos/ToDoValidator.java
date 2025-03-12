@@ -14,6 +14,13 @@ public class ToDoValidator {
 
     private TodoRepository repository;
 
+    // @Value("${app.config.variavel}")
+    // private String variavel;
+
+    // public void imprimirVariavel (){
+        // System.out.println(variavel);
+    // }
+
     public ToDoValidator(TodoRepository repository) {
         this.repository = repository;
     }

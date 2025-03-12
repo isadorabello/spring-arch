@@ -25,10 +25,15 @@ public class ArquiteturaspringApplication {
 		ConfigurableApplicationContext applicationContext = builder.context();
 //		var produto = applicationContext.getBean("productionRepository");
 
-		ConfigurableEnvironment environment = applicationContext.getEnvironment();
-		String appName = environment.getProperty("spring.application.name");
-		System.out.println("Nome da aplicação: " + appName);
+		// ConfigurableEnvironment environment = applicationContext.getEnvironment();
+		// String appName = environment.getProperty("spring.application.name");
+		// System.out.println("Nome da aplicação: " + appName);
+
+		// ToDoValidator valor = applicationContext.getBean(ToDoValidator.class);
+		// valor.imprimirVariavel();
 		 */
+
+
 
 	}
 
