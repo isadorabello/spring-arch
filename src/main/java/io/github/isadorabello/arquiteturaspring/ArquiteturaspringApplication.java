@@ -18,6 +18,7 @@ public class ArquiteturaspringApplication {
 		SpringApplicationBuilder builder = new SpringApplicationBuilder(ArquiteturaspringApplication.class);
 		builder.bannerMode(Banner.Mode.OFF);
 		builder.profiles("Production", "Homologation");
+		builder.lazyInitialization(true); //ou ir no arquivo .properties e usar a seguinte linha: spring.main.lazy-inicialization=true (apenas nesse contexto faz sentido usar a marcação @Lazy(false) em outros beans)
 		builder.run(args);
 
 		// Contexto da aplicação - pós iniciação
