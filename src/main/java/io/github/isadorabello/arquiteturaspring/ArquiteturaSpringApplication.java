@@ -1,18 +1,14 @@
 package io.github.isadorabello.arquiteturaspring;
 
-import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.context.ConfigurableApplicationContext;
-import org.springframework.core.env.ConfigurableEnvironment;
 
 @SpringBootApplication
-public class ArquiteturaspringApplication {
+public class ArquiteturaSpringApplication {
 
 	public static void main(String[] args) {
 
-		SpringApplication.run(ArquiteturaspringApplication.class, args);
+		SpringApplication.run(ArquiteturaSpringApplication.class, args);
 
 		/*
 		SpringApplicationBuilder builder = new SpringApplicationBuilder(ArquiteturaspringApplication.class);
