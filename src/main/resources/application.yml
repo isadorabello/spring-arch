@@ -5,6 +5,11 @@ spring:
     show-sql: true
   main:
     lazy-initialization: false
+  datasource:
+    url: jdbc:postgres://localhost:5432/livraria
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
 
 app:
   config:
