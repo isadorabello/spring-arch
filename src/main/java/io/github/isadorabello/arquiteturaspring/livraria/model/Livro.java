@@ -8,9 +8,8 @@ import java.util.UUID;
 
 @Entity
 @Table(name = "livro")
-@Data // getter, setter, toString...
+@Data
 public class Livro {
-
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.UUID)
