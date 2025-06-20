@@ -1,14 +1,20 @@
 package io.github.isadorabello.arquiteturaspring;
 
+import io.github.isadorabello.arquiteturaspring.livraria.model.Autor;
+import io.github.isadorabello.arquiteturaspring.livraria.repository.AutorRepository;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import java.time.LocalDate;
 
 @SpringBootApplication
 public class ArquiteturaSpringApplication {
 
 	public static void main(String[] args) {
 
-		SpringApplication.run(ArquiteturaSpringApplication.class, args);
+		var context = SpringApplication.run(ArquiteturaSpringApplication.class, args);
+		AutorRepository autorRepository = context.getBean(AutorRepository.class);
+		exemploSalvarRegistro(autorRepository);
 
 		/*
 		SpringApplicationBuilder builder = new SpringApplicationBuilder(ArquiteturaspringApplication.class);
@@ -29,8 +35,15 @@ public class ArquiteturaSpringApplication {
 		// valor.imprimirVariavel();
 		 */
 
+	}
 
-
+	public static void exemploSalvarRegistro(AutorRepository autorRepository){
+		Autor autor = new Autor();
+		autor.setNome("Mariana Bezerra de Moraes");
+		autor.setNacionalidade("Brasileira");
+		autor.setDataNascimento(LocalDate.of(1996, 5, 23));
+		var autorSalvo = autorRepository.save(autor);
+		System.out.println(autorSalvo);
 	}
 
 
